@@ -3,7 +3,7 @@
 # FILENAME: indexing.py
 # SPECIFICATION: This program will read the file colllection.csv and output the tf-idf document-term matrix
 # FOR: CS 5180- Assignment #1
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 3 hours
 #-----------------------------------------------------------*/
 
 #Importing some Python libraries
