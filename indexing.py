@@ -21,7 +21,7 @@ with open('collection.csv', 'r') as csvfile:
 
 #Conducting stopword removal for pronouns/conjunctions. Hint: use a set to define your stopwords.
 #--> add your Python code here
-stopWords = {'I', 'and', 'She', 'her', 'They', 'their'}
+stopWords = ['I', 'and', 'She', 'her', 'They', 'their']
 
 for i in range(len(documents)):
     for stop in stopWords:
@@ -46,9 +46,9 @@ for doc in documents:
     for term in doc:
         if term not in indexTerms:
             indexTerms.append(term)
-
-print(indexTermList)
-
+print("My Index Terms: ")
+print(indexTerms)
+print()
 
 #Building the document-term matrix by using the tf-idf weights.
 #--> add your Python code here
@@ -81,4 +81,5 @@ for i, doc in enumerate(indexTermList):
 
 #Printing the document-term matrix.
 #--> add your Python code here
+print("My Doc Term Matrix: ")
 print(docTermMatrix)
